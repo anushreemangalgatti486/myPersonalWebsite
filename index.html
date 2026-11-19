@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal portfolio website, resume, and bio-data of Anushree Ajjappa Mangalgatti, B.E. Computer Science and Engineering student at Jain College of Engineering and Technology, Hubballi.">
+    <title>Anushree Ajjappa Mangalgatti | Home</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif' font-size='13' font-weight='bold'%3EAM%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Consistent Header & Navigation Bar Across All Pages -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand" aria-label="Anushree Ajjappa Mangalgatti - Home">
+                <span class="brand-badge" aria-hidden="true">AM</span>
+                <span class="brand-text">
+                    <span class="brand-name">Anushree Mangalgatti</span>
+                    <span class="brand-role">CSE Undergraduate</span>
+                </span>
+            </a>
+
+            <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="biodata.html" class="nav-link">Bio-data</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button
+                    type="button"
+                    id="theme-toggle"
+                    class="icon-btn theme-toggle"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark or light mode"
+                >
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                    </svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2"/><path d="M12 20v2"/>
+                        <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+                        <path d="M2 12h2"/><path d="M20 12h2"/>
+                        <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+                    </svg>
+                    <span class="theme-label">Dark</span>
+                </button>
+
+                <button
+                    type="button"
+                    id="nav-toggle"
+                    class="icon-btn nav-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation"
+                >
+                    <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                    <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero / Personal Introduction Section -->
+        <section class="hero-section reveal" aria-labelledby="hero-heading">
+            <div class="hero-content">
+                <span class="welcome-pill">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3l1.9 4.5L18.5 9l-4.6 1.5L12 15l-1.9-4.5L5.5 9l4.6-1.5L12 3z"/>
+                    </svg>
+                    Welcome to My Personal Website
+                </span>
+
+                <p class="hero-eyebrow">Hello, I am</p>
+                <h1 id="hero-heading" class="hero-title">
+                    <span class="gradient-text">Anushree Ajjappa Mangalgatti</span>
+                </h1>
+
+                <div class="hero-meta">
+                    <span class="meta-chip">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                            <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                        </svg>
+                        Bachelor of Engineering – Computer Science and Engineering
+                    </span>
+                    <span class="meta-chip">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M3 21h18"/><path d="M5 21V7l8-4v18"/><path d="M19 21V11l-6-4"/>
+                        </svg>
+                        Jain College of Engineering and Technology, Hubballi
+                    </span>
+                    <span class="meta-chip">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                        Dharwad, Karnataka
+                    </span>
+                </div>
+
+                <p class="hero-description">
+                    Welcome to my digital portfolio! I am a Computer Science and Engineering student
+                    passionate about software development, responsive web design, and learning modern
+                    technologies. Explore my academic journey, technical skills, projects, and bio-data
+                    using the quick links below.
+                </p>
+
+                <div class="hero-actions">
+                    <a href="resume.html" class="btn btn-primary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                            <polyline points="14 2 14 8 20 8"/>
+                            <line x1="16" y1="13" x2="8" y2="13"/>
+                            <line x1="16" y1="17" x2="8" y2="17"/>
+                        </svg>
+                        View Resume
+                    </a>
+
+                    <a href="biodata.html" class="btn btn-secondary">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        View Bio-data
+                    </a>
+
+                    <button type="button" id="welcome-btn" class="btn btn-ghost">
+                        Welcome Note
+                    </button>
+                </div>
+            </div>
+
+            <!-- Right-side Profile Summary Card -->
+            <aside class="hero-profile-card" aria-label="Quick profile overview">
+                <div class="profile-avatar" aria-hidden="true">AM</div>
+                <h2 class="profile-card-heading">Quick Profile</h2>
+                <p class="profile-card-sub">Computer Science &amp; Engineering</p>
+
+                <dl class="profile-facts">
+                    <div class="profile-fact-row">
+                        <dt>Course</dt>
+                        <dd>B.E. (CSE)</dd>
+                    </div>
+                    <div class="profile-fact-row">
+                        <dt>College</dt>
+                        <dd>JCET, Hubballi</dd>
+                    </div>
+                    <div class="profile-fact-row">
+                        <dt>Location</dt>
+                        <dd>Dharwad, Karnataka</dd>
+                    </div>
+                    <div class="profile-fact-row">
+                        <dt>Academic CGPA</dt>
+                        <dd>8.77</dd>
+                    </div>
+                    <div class="profile-fact-row">
+                        <dt>Core Skills</dt>
+                        <dd>Python, Java, Web, SQL</dd>
+                    </div>
+                </dl>
+
+                <div class="profile-links">
+                    <a href="https://github.com/anushreemangalgatti486" target="_blank" rel="noopener noreferrer" class="social-pill">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4"/>
+                            <path d="M9 18c-4.51 2-5-2-7-2"/>
+                        </svg>
+                        GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/anushree-mangalgatti-46a9a8379" target="_blank" rel="noopener noreferrer" class="social-pill">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+                            <rect width="4" height="12" x="2" y="9"/>
+                            <circle cx="4" cy="4" r="2"/>
+                        </svg>
+                        LinkedIn
+                    </a>
+                </div>
+            </aside>
+        </section>
+
+        <!-- About Me Section -->
+        <section class="section-card reveal" aria-labelledby="about-heading">
+            <h2 id="about-heading" class="section-title">About Me</h2>
+            <p class="lead-text">
+                I am Anushree Ajjappa Mangalgatti, currently pursuing my Bachelor of Engineering in
+                Computer Science and Engineering at Jain College of Engineering and Technology, Hubballi.
+                Hailing from Dharwad, Karnataka, I enjoy turning ideas into clean, structured, and
+                practical software solutions.
+            </p>
+            <p class="lead-text">
+                Alongside my coursework, I actively strengthen my fundamentals in programming, web
+                development, and relational databases while exploring emerging topics such as Generative AI
+                and participating in hackathons to collaborate and sharpen my problem-solving skills.
+            </p>
+        </section>
+
+        <!-- Education Highlights Section -->
+        <section class="section-card reveal" aria-labelledby="education-heading">
+            <h2 id="education-heading" class="section-title">Education Highlights</h2>
+            <div class="edu-grid">
+                <article class="edu-card">
+                    <span class="edu-score">CGPA: 8.77</span>
+                    <h3>B.E. – Computer Science &amp; Engineering</h3>
+                    <p class="edu-institution">Jain College of Engineering and Technology, Hubballi</p>
+                    <p class="edu-note">Building strong foundations in programming, databases, and software development.</p>
+                </article>
+
+                <article class="edu-card">
+                    <span class="edu-score">87.16%</span>
+                    <h3>Pre-University (PUC)</h3>
+                    <p class="edu-institution">Mahesh PU College, Dharwad</p>
+                    <p class="edu-note">Developed analytical thinking and strong academic discipline in core sciences.</p>
+                </article>
+
+                <article class="edu-card">
+                    <span class="edu-score">89%</span>
+                    <h3>SSLC (10th Standard)</h3>
+                    <p class="edu-institution">JSS English Medium School, Dharwad</p>
+                    <p class="edu-note">Consistent academic performance with strong fundamentals across subjects.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Technical Interests Section -->
+        <section class="section-card reveal" aria-labelledby="interests-heading">
+            <h2 id="interests-heading" class="section-title">Technical Interests</h2>
+            <div class="interest-grid">
+                <article class="interest-card">
+                    <div class="interest-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Software Development</h3>
+                        <p>Writing clean, logical code in Python and Java to build reliable software applications.</p>
+                    </div>
+                </article>
+
+                <article class="interest-card">
+                    <div class="interest-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="18" x="3" y="3" rx="2"/>
+                            <path d="M3 9h18"/>
+                            <path d="M9 21V9"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Web Technologies</h3>
+                        <p>Crafting accessible, responsive, and engaging interfaces with HTML5, CSS3, and JavaScript.</p>
+                    </div>
+                </article>
+
+                <article class="interest-card">
+                    <div class="interest-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <ellipse cx="12" cy="5" rx="9" ry="3"/>
+                            <path d="M3 5V19A9 3 0 0 0 21 19V5"/>
+                            <path d="M3 12A9 3 0 0 0 21 12"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Database Management &amp; SQL</h3>
+                        <p>Organizing structured data and querying relational databases efficiently using SQL.</p>
+                    </div>
+                </article>
+
+                <article class="interest-card">
+                    <div class="interest-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 2a4 4 0 0 0-4 4v2H6a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8a2 2 0 0 0-2-2h-2V6a4 4 0 0 0-4-4Z"/>
+                            <circle cx="9" cy="14" r="1"/>
+                            <circle cx="15" cy="14" r="1"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <h3>Generative AI &amp; Problem Solving</h3>
+                        <p>Exploring intelligent assistant concepts, Generative AI fundamentals, and hackathon challenges.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="hobbies" class="section-card reveal" aria-labelledby="hobbies-heading">
+            <h2 id="hobbies-heading" class="section-title">Hobbies</h2>
+            <div class="hobby-grid">
+                <article class="hobby-card">
+                    <div class="hobby-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3>Coding and Problem Solving</h3>
+                    <p>Practicing logical thinking by turning challenging problems into clear, reliable solutions.</p>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 3v3"/><path d="M18.4 5.6l-2.1 2.1"/><path d="M21 12h-3"/>
+                            <path d="M18.4 18.4l-2.1-2.1"/><path d="M12 21v-3"/><path d="M5.6 18.4l2.1-2.1"/>
+                            <path d="M3 12h3"/><path d="M5.6 5.6l2.1 2.1"/><circle cx="12" cy="12" r="4"/>
+                        </svg>
+                    </div>
+                    <h3>Learning New Technologies</h3>
+                    <p>Staying curious and building skills by exploring tools and ideas across technology.</p>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/>
+                            <path d="M2 14h2"/><path d="M20 14h2"/><path d="M9 13h.01"/><path d="M15 13h.01"/>
+                            <path d="M9 17h6"/>
+                        </svg>
+                    </div>
+                    <h3>Exploring Artificial Intelligence</h3>
+                    <p>Discovering how AI can support thoughtful, useful solutions to real-world challenges.</p>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/>
+                        </svg>
+                    </div>
+                    <h3>Listening to Music</h3>
+                    <p>Enjoying music as a refreshing way to relax, recharge, and find inspiration.</p>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/>
+                        </svg>
+                    </div>
+                    <h3>Reading and Learning</h3>
+                    <p>Reading to broaden my perspective and make continuous learning part of everyday life.</p>
+                </article>
+
+                <article class="hobby-card">
+                    <div class="hobby-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="14" x="3" y="3" rx="2"/><path d="M7 21h10"/><path d="M12 17v4"/>
+                            <path d="m8 10 2.5 2.5L16 7"/>
+                        </svg>
+                    </div>
+                    <h3>Web Development</h3>
+                    <p>Designing accessible, responsive web experiences with HTML, CSS, and JavaScript.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section-card reveal" aria-labelledby="home-projects-heading">
+            <h2 id="home-projects-heading" class="section-title">Projects</h2>
+            <div class="project-grid">
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z"/>
+                            <path d="m9 12 2 2 4-4"/>
+                        </svg>
+                    </div>
+                    <span class="project-tag">Cybersecurity Awareness</span>
+                    <h3>Cyber Safety Awareness</h3>
+                    <p>A cybersecurity awareness project designed to educate users about online threats and promote safe internet practices.</p>
+                    <ul class="project-feature-list">
+                        <li>Awareness about phishing attacks</li>
+                        <li>Identifying fake websites and suspicious links</li>
+                        <li>Password security and protection</li>
+                        <li>Online privacy and data protection</li>
+                        <li>Safe browsing practices</li>
+                    </ul>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-icon" aria-hidden="true">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M14 4v16"/><path d="M10 4v16"/><path d="M4 8h16"/><path d="M4 16h16"/>
+                            <rect width="20" height="20" x="2" y="2" rx="3"/>
+                        </svg>
+                    </div>
+                    <span class="project-tag">Booking and Management</span>
+                    <h3>LPG Management System</h3>
+                    <p>A project designed to simplify LPG cylinder booking and management, helping users manage their LPG-related activities efficiently.</p>
+                    <ul class="project-feature-list">
+                        <li>User registration and login</li>
+                        <li>LPG cylinder booking</li>
+                        <li>Customer details management</li>
+                        <li>Booking status tracking</li>
+                        <li>LPG booking and delivery information management</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <!-- Bottom Call-To-Action Banner -->
+        <section class="cta-banner reveal" aria-label="Explore Resume and Bio-data">
+            <div>
+                <h2>Explore My Complete Profile</h2>
+                <p>View or save a printable PDF copy of my Resume and Bio-data.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="resume.html" class="btn btn-light">Open Resume</a>
+                <a href="biodata.html" class="btn btn-outline-light">Open Bio-data</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Accessible Welcome Modal Triggered by "Welcome Note" Button -->
+    <div id="welcome-modal" class="modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="welcome-modal-title" aria-hidden="true">
+        <div class="modal-card">
+            <div class="modal-icon" aria-hidden="true">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3l1.9 4.5L18.5 9l-4.6 1.5L12 15l-1.9-4.5L5.5 9l4.6-1.5L12 3z"/>
+                </svg>
+            </div>
+            <h2 id="welcome-modal-title" class="modal-title">Welcome!</h2>
+            <p class="modal-message">
+                Thank you for visiting the personal website of Anushree Ajjappa Mangalgatti.
+                Use the navigation bar to view my Resume, explore my Bio-data, or toggle Dark Mode.
+            </p>
+            <button type="button" id="welcome-modal-close" class="btn btn-primary">Close</button>
+        </div>
+    </div>
+
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="current-year">2026</span> Anushree Ajjappa Mangalgatti. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="biodata.html">Bio-data</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

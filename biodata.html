@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal bio-data of Anushree Ajjappa Mangalgatti, B.E. Computer Science and Engineering student at Jain College of Engineering and Technology, Hubballi.">
+    <title>Anushree Ajjappa Mangalgatti | Bio-data</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0%25' stop-color='%234f46e5'/%3E%3Cstop offset='100%25' stop-color='%237c3aed'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='8' fill='url(%23g)'/%3E%3Ctext x='16' y='21' text-anchor='middle' fill='%23ffffff' font-family='Arial,sans-serif' font-size='13' font-weight='bold'%3EAM%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <!-- Consistent Header & Navigation Bar Across All Pages -->
+    <header class="site-header">
+        <div class="nav-container">
+            <a href="index.html" class="brand" aria-label="Anushree Ajjappa Mangalgatti - Home">
+                <span class="brand-badge" aria-hidden="true">AM</span>
+                <span class="brand-text">
+                    <span class="brand-name">Anushree Mangalgatti</span>
+                    <span class="brand-role">CSE Undergraduate</span>
+                </span>
+            </a>
+
+            <nav id="primary-navigation" class="primary-nav" aria-label="Primary navigation">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="resume.html" class="nav-link">Resume</a></li>
+                    <li><a href="biodata.html" class="nav-link active" aria-current="page">Bio-data</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button
+                    type="button"
+                    id="theme-toggle"
+                    class="icon-btn theme-toggle"
+                    aria-label="Switch to dark mode"
+                    aria-pressed="false"
+                    title="Toggle dark or light mode"
+                >
+                    <svg class="icon-moon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+                    </svg>
+                    <svg class="icon-sun" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <circle cx="12" cy="12" r="4"/>
+                        <path d="M12 2v2"/><path d="M12 20v2"/>
+                        <path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/>
+                        <path d="M2 12h2"/><path d="M20 12h2"/>
+                        <path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/>
+                    </svg>
+                    <span class="theme-label">Dark</span>
+                </button>
+
+                <button
+                    type="button"
+                    id="nav-toggle"
+                    class="icon-btn nav-toggle"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="primary-navigation"
+                >
+                    <svg class="icon-menu" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <line x1="4" x2="20" y1="6" y2="6"/>
+                        <line x1="4" x2="20" y1="12" y2="12"/>
+                        <line x1="4" x2="20" y1="18" y2="18"/>
+                    </svg>
+                    <svg class="icon-close" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M18 6 6 18"/>
+                        <path d="m6 6 12 12"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Bio-data Header Banner with Print / Save as PDF Button -->
+        <section class="page-banner reveal" aria-labelledby="biodata-heading">
+            <div class="page-banner-text">
+                <p class="page-kicker">Personal Profile</p>
+                <h1 id="biodata-heading">Personal Bio-data</h1>
+                <p class="page-subtitle">
+                    Anushree Ajjappa Mangalgatti &middot; B.E. Computer Science and Engineering
+                </p>
+            </div>
+
+            <div class="page-banner-actions no-print">
+                <button type="button" id="print-biodata-btn" class="btn btn-light" aria-label="Print or save bio-data as PDF">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <polyline points="6 9 6 2 18 2 18 9"/>
+                        <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/>
+                        <rect width="12" height="8" x="6" y="14"/>
+                    </svg>
+                    Print / Save as PDF
+                </button>
+            </div>
+        </section>
+
+        <article class="document-sheet reveal" aria-label="Bio-data Document">
+            <!-- Screen-only Reminder About Editable Placeholders -->
+            <div class="helper-note no-print" role="note">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <circle cx="12" cy="12" r="10"/>
+                    <line x1="12" y1="16" x2="12" y2="12"/>
+                    <line x1="12" y1="8" x2="12.01" y2="8"/>
+                </svg>
+                <span>The date field can be updated directly in <code>biodata.html</code> before printing.</span>
+            </div>
+
+            <!-- 1. Bio-data Structured Table -->
+            <section class="doc-section" aria-labelledby="personal-details-heading">
+                <h2 id="personal-details-heading" class="section-title">Personal &amp; Academic Details</h2>
+                <div class="table-wrap">
+                    <table class="biodata-table">
+                        <tbody>
+                            <tr>
+                                <th scope="row">Full Name</th>
+                                <td><strong>Anushree Ajjappa Mangalgatti</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Date of Birth</th>
+                                <td>04/08/2006</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Gender</th>
+                                <td>Female</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Nationality</th>
+                                <td>Indian</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Location</th>
+                                <td>Dharwad, Karnataka, India</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Languages Known</th>
+                                <td>Kannada, English, Hindi</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Educational Qualification</th>
+                                <td>
+                                    B.E. in Computer Science and Engineering (CGPA: 8.77) &middot;
+                                    Pre-University (87.16%) &middot; SSLC (89%)
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">College Name</th>
+                                <td>Jain College of Engineering and Technology, Hubballi</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Technical Interests</th>
+                                <td>
+                                    Software Development, Web Development (HTML, CSS, JavaScript),
+                                    Python, Java, SQL, and Generative AI
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Hobbies</th>
+                                <td>Coding and problem solving, learning new technologies, exploring artificial intelligence, listening to music, reading and learning, and web development</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Email</th>
+                                <td><a href="mailto:anumangalgatti486@gmail.com">anumangalgatti486@gmail.com</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Phone Number</th>
+                                <td><a href="tel:8618742519">8618742519</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Address</th>
+                                <td>Dharwad, Karnataka, India &ndash; 580004</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+
+            <!-- 2. Declaration & Sign-Off -->
+            <section class="doc-section" aria-labelledby="declaration-heading">
+                <h2 id="declaration-heading" class="section-title">Declaration</h2>
+                <p class="callout">
+                    I hereby declare that all the information provided above is true, complete,
+                    and correct to the best of my knowledge and belief.
+                </p>
+
+                <div class="signoff-grid">
+                    <div class="signoff-meta">
+                        <p><strong>Place:</strong> Dharwad, Karnataka</p>
+                        <!-- EDITABLE PLACEHOLDER: Enter current date -->
+                        <p><strong>Date:</strong> <span class="editable-placeholder">[DD / MM / YYYY]</span></p>
+                    </div>
+
+                    <div class="signoff-signature">
+                        <p><strong>Signature:</strong></p>
+                        <p class="signature-line">Anushree Ajjappa Mangalgatti</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+    </main>
+
+    <button type="button" id="back-to-top" class="back-to-top" aria-label="Scroll back to top" title="Back to top">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="m18 15-6-6-6 6"/>
+        </svg>
+    </button>
+
+    <footer class="site-footer">
+        <div class="footer-inner">
+            <p>&copy; <span id="current-year">2026</span> Anushree Ajjappa Mangalgatti. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="resume.html">Resume</a>
+                <a href="biodata.html">Bio-data</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
